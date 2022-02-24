@@ -1,0 +1,20 @@
+// Media-Query for Tablet :
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// Media-Query for Desktop :
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+// En cas de bug :
+// @mixin mobile {
+//   @media (max-width: 767px) {
+//     @content;
+//   }
+// }
