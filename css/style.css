@@ -1,7 +1,152 @@
-.cards {
-  width: 50%;
-  height: 100px;
-  background: green;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Shrikhand&display=swap");
+:root {
+  --font-family-logo-title: "Shrikhand", cursive;
+  --font-family-text: "Roboto", sans-serif;
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --tertiary: #99e2d0;
+  --text-dark: #000;
+  --text-light: #fff;
+  --background: #fff;
+  --background-light: #f6f6f6;
+  --background-dark: #353535;
+  --box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15), 0 3px 3px rgba(0, 0, 0, 0.1);
+  --btn-home-gradient: linear-gradient(
+    341deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text);
+  font-family: var(--font-family-text);
+  background: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: var(--font-family-logo-title);
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.9rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.7rem;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  box-shadow: var(--box-shadow);
+  height: 8rem;
+  z-index: 1;
+}
+.header__title h1 {
+  margin: 0;
+}
+.header__search {
+  width: 100%;
+  padding: 1rem;
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 4rem;
+}
+.header__search i {
+  text-align: center;
+  margin-right: 1rem;
+}
+.header__search input {
+  width: 30%;
+  height: 4rem;
+  border: none;
+  background: #eaeaea;
+  font-weight: 700;
+}
+.header__search input::placeholder {
+  color: var(--text-dark);
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-light);
+  padding: 4rem 2rem;
+}
+.home h2 {
+  text-align: center;
+  margin: 0 2rem 2rem 2rem;
+}
+.home p {
+  text-align: center;
+  margin: 0 0 3rem 0;
+}
+.home a {
+  padding: 1.5rem 2rem;
+  background: var(--btn-home-gradient);
+  border-radius: 3rem;
+  color: var(--text-light);
 }
 
 /*# sourceMappingURL=style.css.map */

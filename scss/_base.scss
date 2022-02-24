@@ -6,6 +6,7 @@ body {
   font-size: 1.6rem;
   color: var(--text);
   font-family: var(--font-family-text);
+  background: var(--background);
 }
 
 h1,
@@ -14,31 +15,32 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 2rem;
+  margin: 2rem;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  font-family: var(--font-family-logo-title);
 }
 
 h2 {
-  font-size: 3rem;
-}
-
-h3 {
   font-size: 2.5rem;
 }
 
-h4 {
+h3 {
   font-size: 2rem;
 }
 
-h5 {
+h4 {
   font-size: 1.9rem;
 }
 
-h6 {
+h5 {
   font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.7rem;
 }
 
 ul {
@@ -50,6 +52,6 @@ img {
 }
 
 a {
-  color: var(--text);
+  color: var(--text-dark);
   text-decoration: none;
 }
