@@ -85,5 +85,18 @@
     background: var(--btn-home-gradient);
     border-radius: 3rem;
     color: var(--text-light);
+    box-shadow: var(--box-shadow-btn-card);
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+// Fonctioning :
+
+.functioning {
+  margin: 4rem 1rem;
+
+  .container-fonctioning-steps {
+    margin: 4rem 2rem;
   }
 }

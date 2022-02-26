@@ -7,10 +7,13 @@
   --tertiary: #99e2d0;
   --text-dark: #000;
   --text-light: #fff;
+  --icon-step: #7e7e7e;
+  --step-hover: #f5edff;
   --background: #fff;
   --background-light: #f6f6f6;
   --background-dark: #353535;
   --box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15), 0 3px 3px rgba(0, 0, 0, 0.1);
+  --box-shadow-btn-card: 0 6px 6px rgba(0, 0, 0, 0.15);
   --btn-home-gradient: linear-gradient(
     341deg,
     rgba(147, 86, 220, 1) 0%,
@@ -22,6 +25,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.step {
+  height: 8rem;
+  margin: 2rem 0;
+  background: var(--background-light);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow-btn-card);
+  cursor: pointer;
+}
+.step span {
+  position: relative;
+  text-align: center;
+  left: -2rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 5rem;
+  background: var(--primary);
+  color: var(--text-light);
+  margin: 0 0.5rem;
+}
+.step i {
+  color: var(--icon-step);
+  font-size: 3rem;
+  margin: 0 2.5rem 0 0;
+}
+.step p {
+  font-weight: 700;
+}
+.step:hover {
+  background: var(--step-hover);
+}
+.step:hover i {
+  color: var(--primary);
 }
 
 :root {
@@ -147,6 +187,14 @@ a {
   background: var(--btn-home-gradient);
   border-radius: 3rem;
   color: var(--text-light);
+  box-shadow: var(--box-shadow-btn-card);
+}
+
+.functioning {
+  margin: 4rem 1rem;
+}
+.functioning .container-fonctioning-steps {
+  margin: 4rem 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
