@@ -7,6 +7,7 @@
   --tertiary: #99e2d0;
   --text-dark: #000;
   --text-light: #fff;
+  --text-new: #008766;
   --icon-step: #7e7e7e;
   --step-hover: #f5edff;
   --background: #fff;
@@ -27,43 +28,6 @@
   box-sizing: border-box;
 }
 
-.step {
-  height: 8rem;
-  margin: 2rem 0;
-  background: var(--background-light);
-  border-radius: 2rem;
-  display: flex;
-  align-items: center;
-  box-shadow: var(--box-shadow-btn-card);
-  cursor: pointer;
-}
-.step span {
-  position: relative;
-  text-align: center;
-  left: -2rem;
-  width: 3rem;
-  height: 3rem;
-  line-height: 3rem;
-  border-radius: 5rem;
-  background: var(--primary);
-  color: var(--text-light);
-  margin: 0 0.5rem;
-}
-.step i {
-  color: var(--icon-step);
-  font-size: 3rem;
-  margin: 0 2.5rem 0 0;
-}
-.step p {
-  font-weight: 700;
-}
-.step:hover {
-  background: var(--step-hover);
-}
-.step:hover i {
-  color: var(--primary);
-}
-
 :root {
   font-size: 62.5%;
 }
@@ -81,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 h1 {
@@ -191,10 +155,99 @@ a {
 }
 
 .functioning {
-  margin: 4rem 1rem;
-}
-.functioning .container-fonctioning-steps {
   margin: 4rem 2rem;
+}
+.functioning .container-functioning-steps {
+  margin: 4rem 0 4rem 2rem;
+}
+.functioning .container-functioning-steps .step {
+  height: 8rem;
+  margin: 2rem 0;
+  background: var(--background-light);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow-btn-card);
+  cursor: pointer;
+  position: relative;
+}
+.functioning .container-functioning-steps .step span {
+  position: absolute;
+  text-align: center;
+  left: -2rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 5rem;
+  background: var(--primary);
+  color: var(--text-light);
+}
+.functioning .container-functioning-steps .step i {
+  color: var(--icon-step);
+  font-size: 3rem;
+  margin: 0 2.5rem 0 3rem;
+}
+.functioning .container-functioning-steps .step p {
+  font-weight: 700;
+}
+.functioning .container-functioning-steps .step:hover {
+  background: var(--step-hover);
+}
+.functioning .container-functioning-steps .step:hover i {
+  color: var(--primary);
+}
+
+.restaurants {
+  padding: 4rem 2rem;
+  background: var(--background-light);
+}
+.restaurants .card {
+  width: 100%;
+  height: 25rem;
+  background: var(--background);
+  border-radius: 2rem;
+  margin: 2rem 0;
+  box-shadow: var(--box-shadow-btn-card);
+}
+.restaurants .card .card-img {
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+.restaurants .card .card-img img {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.restaurants .card .card-img .new {
+  color: var(--text-new);
+  background: var(--tertiary);
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+}
+.restaurants .card .card-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30%;
+}
+.restaurants .card .card-description .card-title {
+  margin: 1rem;
+}
+.restaurants .card .card-description .card-title h3 {
+  margin: 0 0 0.5rem 0;
+}
+.restaurants .card .card-description .card-like {
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
