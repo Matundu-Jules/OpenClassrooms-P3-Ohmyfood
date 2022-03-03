@@ -28,6 +28,36 @@
   box-sizing: border-box;
 }
 
+.btn {
+  padding: 1.5rem 2rem;
+  background: var(--btn-home-gradient);
+  border-radius: 3rem;
+  color: var(--text-light);
+  box-shadow: var(--box-shadow-btn-card);
+}
+
+footer {
+  padding: 2rem 2rem 3rem 2rem;
+  background: var(--background-dark);
+}
+footer h3 {
+  color: var(--text-light);
+  font-family: var(--font-family-logo-title);
+  font-size: 2rem;
+  margin: 0 0 2rem 0;
+}
+footer ul li {
+  margin-bottom: 1rem;
+}
+footer ul li a {
+  color: var(--text-light);
+}
+footer ul li a i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  width: 2rem;
+}
+
 :root {
   font-size: 62.5%;
 }
@@ -88,7 +118,6 @@ a {
 
 p {
   font-size: 1.5rem;
-  font-weight: 300;
 }
 
 .header {
@@ -100,10 +129,11 @@ p {
 }
 .header__title {
   width: 100%;
-  text-align: center;
-  padding: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: var(--box-shadow);
-  height: 8rem;
+  height: 6rem;
   z-index: 1;
 }
 .header__title h1 {
@@ -152,13 +182,6 @@ p {
 .home p {
   text-align: center;
   margin: 0 0 3rem 0;
-}
-.home a {
-  padding: 1.5rem 2rem;
-  background: var(--btn-home-gradient);
-  border-radius: 3rem;
-  color: var(--text-light);
-  box-shadow: var(--box-shadow-btn-card);
 }
 
 .functioning {
@@ -261,28 +284,6 @@ p {
 .restaurants .card .card-description .card-like {
   margin-right: 1rem;
   font-size: 2rem;
-}
-
-footer {
-  padding: 2rem 2rem 3rem 2rem;
-  background: var(--background-dark);
-}
-footer h3 {
-  color: var(--text-light);
-  font-family: var(--font-family-logo-title);
-  font-size: 2rem;
-  margin: 0 0 2rem 0;
-}
-footer ul li {
-  margin-bottom: 1rem;
-}
-footer ul li a {
-  color: var(--text-light);
-}
-footer ul li a i {
-  margin-right: 0.5rem;
-  font-size: 1.5rem;
-  width: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
