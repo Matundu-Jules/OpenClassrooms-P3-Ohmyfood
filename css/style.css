@@ -154,7 +154,7 @@ p {
   margin-right: 1rem;
 }
 .header__search input {
-  width: 40%;
+  width: 15rem;
   height: 4rem;
   border: none;
   background: #eaeaea;
@@ -187,8 +187,21 @@ p {
 .functioning {
   margin: 4rem 2rem;
 }
+@media only screen and (min-width: 992px) {
+  .functioning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .functioning .container-functioning-steps {
   margin: 4rem 0 4rem 2rem;
+}
+@media only screen and (min-width: 992px) {
+  .functioning .container-functioning-steps {
+    width: 50%;
+  }
 }
 .functioning .container-functioning-steps .step {
   height: 8rem;
@@ -230,9 +243,18 @@ p {
 .restaurants {
   padding: 4rem 2rem;
   background: var(--background-light);
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .restaurants {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
 }
 .restaurants h2 {
   margin: 0 0 2rem 0;
+  width: 100%;
 }
 .restaurants .card {
   width: 100%;
@@ -241,6 +263,16 @@ p {
   border-radius: 2rem;
   margin: 2rem 0;
   box-shadow: var(--box-shadow-btn-card);
+}
+@media only screen and (min-width: 768px) {
+  .restaurants .card {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .restaurants .card {
+    width: 22%;
+  }
 }
 .restaurants .card .card-img {
   width: 100%;

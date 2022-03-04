@@ -49,22 +49,40 @@ main {
     padding: 2rem 2rem 6rem 2rem;
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
-
     width: 100%;
+
+    @include desktop {
+      justify-content: space-around;
+    }
 
     h1 {
       font-size: 2.4rem;
+      @include desktop {
+        margin-left: 2rem;
+        font-size: 3rem;
+        width: 100%;
+        position: relative;
+      }
     }
 
-    i {
+    i.fa-heart {
       font-size: 3rem;
       margin-right: 1.5rem;
+      @include desktop {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+      }
     }
 
     // Section Cards :
     .card {
       width: 100%;
       margin-bottom: 2rem;
+
+      @include desktop {
+        width: 48%;
+      }
 
       h2 {
         text-transform: uppercase;

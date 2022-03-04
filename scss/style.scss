@@ -45,7 +45,7 @@
     }
 
     input {
-      width: 40%;
+      width: 15rem;
       height: 4rem;
       border: none;
       background: #eaeaea;
@@ -99,8 +99,19 @@
 .functioning {
   margin: 4rem 2rem;
 
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .container-functioning-steps {
     margin: 4rem 0 4rem 2rem;
+
+    @include desktop {
+      width: 50%;
+    }
 
     .step {
       height: 8rem;
@@ -112,6 +123,10 @@
       box-shadow: var(--box-shadow-btn-card);
       cursor: pointer;
       position: relative;
+
+      // @include desktop {
+      //   width: 50%;
+      // }
 
       span {
         position: absolute;
@@ -153,9 +168,17 @@
 .restaurants {
   padding: 4rem 2rem;
   background: var(--background-light);
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
 
   h2 {
     margin: 0 0 2rem 0;
+    width: 100%;
   }
 
   .card {
@@ -165,6 +188,14 @@
     border-radius: 2rem;
     margin: 2rem 0;
     box-shadow: var(--box-shadow-btn-card);
+
+    @include tablet {
+      width: 45%;
+    }
+
+    @include desktop {
+      width: 22%;
+    }
 
     .card-img {
       width: 100%;

@@ -160,16 +160,41 @@ main .container-cards-restaurants {
   border-top-right-radius: 5rem;
   width: 100%;
 }
+@media only screen and (min-width: 992px) {
+  main .container-cards-restaurants {
+    justify-content: space-around;
+  }
+}
 main .container-cards-restaurants h1 {
   font-size: 2.4rem;
 }
-main .container-cards-restaurants i {
+@media only screen and (min-width: 992px) {
+  main .container-cards-restaurants h1 {
+    margin-left: 2rem;
+    font-size: 3rem;
+    width: 100%;
+    position: relative;
+  }
+}
+main .container-cards-restaurants i.fa-heart {
   font-size: 3rem;
   margin-right: 1.5rem;
+}
+@media only screen and (min-width: 992px) {
+  main .container-cards-restaurants i.fa-heart {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+  }
 }
 main .container-cards-restaurants .card {
   width: 100%;
   margin-bottom: 2rem;
+}
+@media only screen and (min-width: 992px) {
+  main .container-cards-restaurants .card {
+    width: 48%;
+  }
 }
 main .container-cards-restaurants .card h2 {
   text-transform: uppercase;
