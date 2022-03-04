@@ -284,6 +284,7 @@ p {
 .restaurants .card .card-description .card-like {
   margin-right: 1rem;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
