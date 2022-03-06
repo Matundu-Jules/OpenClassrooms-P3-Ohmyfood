@@ -2,6 +2,7 @@
 @import "variables";
 @import "reset";
 @import "classes";
+@import "animations";
 @import "media-queries";
 @import "base";
 
@@ -82,14 +83,6 @@
     text-align: center;
     margin: 0 0 3rem 0;
   }
-
-  // a {
-  //   padding: 1.5rem 2rem;
-  //   background: var(--btn-home-gradient);
-  //   border-radius: 3rem;
-  //   color: var(--text-light);
-  //   box-shadow: var(--box-shadow-btn-card);
-  // }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
@@ -238,12 +231,6 @@
         p {
           font-weight: 300;
         }
-      }
-
-      .card-like {
-        margin-right: 1rem;
-        font-size: 2rem;
-        cursor: pointer;
       }
     }
   }

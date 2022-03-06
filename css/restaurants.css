@@ -58,6 +58,34 @@ footer ul li a i {
   width: 2rem;
 }
 
+.like {
+  font-size: 3rem;
+}
+.like-stroke {
+  position: absolute;
+}
+.like-fill {
+  position: absolute;
+  background: var(--btn-home-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card-like {
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  top: -1rem;
+  left: -2.5rem;
+  cursor: pointer;
+}
+.card-like:hover .like-fill {
+  opacity: 1;
+}
+
 :root {
   font-size: 62.5%;
 }
