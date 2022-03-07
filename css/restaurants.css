@@ -25,7 +25,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .btn {
@@ -33,30 +34,39 @@
   background: var(--btn-home-gradient);
   border-radius: 3rem;
   color: var(--text-light);
-  box-shadow: var(--box-shadow-btn-card);
+  -webkit-box-shadow: var(--box-shadow-btn-card);
+          box-shadow: var(--box-shadow-btn-card);
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+
 .btn:hover {
-  filter: brightness(1.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 footer {
   padding: 2rem 2rem 3rem 2rem;
   background: var(--background-dark);
 }
+
 footer h3 {
   color: var(--text-light);
   font-family: var(--font-family-logo-title);
   font-size: 2rem;
   margin: 0 0 2rem 0;
 }
+
 footer ul li {
   margin-bottom: 1rem;
 }
+
 footer ul li a {
   color: var(--text-light);
 }
+
 footer ul li a i {
   margin-right: 0.5rem;
   font-size: 1.5rem;
@@ -66,9 +76,11 @@ footer ul li a i {
 .like {
   font-size: 3rem;
 }
+
 .like-stroke {
   position: absolute;
 }
+
 .like-fill {
   position: absolute;
   background: var(--btn-home-gradient);
@@ -76,6 +88,7 @@ footer ul li a i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -87,8 +100,133 @@ footer ul li a i {
   left: -2.5rem;
   cursor: pointer;
 }
+
 .card-like:hover .like-fill {
   opacity: 1;
+}
+
+@-webkit-keyframes fade-categories-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-categories-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-entries {
+  opacity: 0;
+}
+
+.card-entries:nth-child(1) {
+  -webkit-animation: fade-categories-menu 0.5s forwards ease-in-out;
+          animation: fade-categories-menu 0.5s forwards ease-in-out;
+}
+
+.card-entries:nth-child(2) {
+  -webkit-animation: fade-categories-menu 1s forwards ease-in-out;
+          animation: fade-categories-menu 1s forwards ease-in-out;
+}
+
+.card-entries:nth-child(3) {
+  -webkit-animation: fade-categories-menu 1.5s forwards ease-in-out;
+          animation: fade-categories-menu 1.5s forwards ease-in-out;
+}
+
+.card-entries:nth-child(4) {
+  -webkit-animation: fade-categories-menu 2s forwards ease-in-out;
+          animation: fade-categories-menu 2s forwards ease-in-out;
+}
+
+.card-entries:nth-child(5) {
+  -webkit-animation: fade-categories-menu 2.5s forwards ease-in-out;
+          animation: fade-categories-menu 2.5s forwards ease-in-out;
+}
+
+.card-entries:nth-child(6) {
+  -webkit-animation: fade-categories-menu 3s forwards ease-in-out;
+          animation: fade-categories-menu 3s forwards ease-in-out;
+}
+
+.card-plats {
+  opacity: 0;
+}
+
+.card-plats:nth-child(1) {
+  -webkit-animation: fade-categories-menu 0.5s forwards 1s ease-in-out;
+          animation: fade-categories-menu 0.5s forwards 1s ease-in-out;
+}
+
+.card-plats:nth-child(2) {
+  -webkit-animation: fade-categories-menu 1s forwards 1s ease-in-out;
+          animation: fade-categories-menu 1s forwards 1s ease-in-out;
+}
+
+.card-plats:nth-child(3) {
+  -webkit-animation: fade-categories-menu 1.5s forwards 1s ease-in-out;
+          animation: fade-categories-menu 1.5s forwards 1s ease-in-out;
+}
+
+.card-plats:nth-child(4) {
+  -webkit-animation: fade-categories-menu 2s forwards 1s ease-in-out;
+          animation: fade-categories-menu 2s forwards 1s ease-in-out;
+}
+
+.card-plats:nth-child(5) {
+  -webkit-animation: fade-categories-menu 2.5s forwards 1s ease-in-out;
+          animation: fade-categories-menu 2.5s forwards 1s ease-in-out;
+}
+
+.card-plats:nth-child(6) {
+  -webkit-animation: fade-categories-menu 3s forwards 1s ease-in-out;
+          animation: fade-categories-menu 3s forwards 1s ease-in-out;
+}
+
+.card-desserts {
+  opacity: 0;
+}
+
+.card-desserts:nth-child(1) {
+  -webkit-animation: fade-categories-menu 0.5s forwards 2s ease-in-out;
+          animation: fade-categories-menu 0.5s forwards 2s ease-in-out;
+}
+
+.card-desserts:nth-child(2) {
+  -webkit-animation: fade-categories-menu 1s forwards 2s ease-in-out;
+          animation: fade-categories-menu 1s forwards 2s ease-in-out;
+}
+
+.card-desserts:nth-child(3) {
+  -webkit-animation: fade-categories-menu 1.5s forwards 2s ease-in-out;
+          animation: fade-categories-menu 1.5s forwards 2s ease-in-out;
+}
+
+.card-desserts:nth-child(4) {
+  -webkit-animation: fade-categories-menu 2s forwards 2s ease-in-out;
+          animation: fade-categories-menu 2s forwards 2s ease-in-out;
+}
+
+.card-desserts:nth-child(5) {
+  -webkit-animation: fade-categories-menu 2.5s forwards 2s ease-in-out;
+          animation: fade-categories-menu 2.5s forwards 2s ease-in-out;
+}
+
+.card-desserts:nth-child(6) {
+  -webkit-animation: fade-categories-menu 3s forwards 2s ease-in-out;
+          animation: fade-categories-menu 3s forwards 2s ease-in-out;
 }
 
 :root {
@@ -154,12 +292,19 @@ p {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   height: 6rem;
 }
+
 .header a {
   line-height: 6rem;
   position: absolute;
@@ -172,47 +317,66 @@ p {
   height: 28rem;
   position: absolute;
 }
+
 .img-restaurants img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main {
   position: relative;
   margin-top: 24rem;
 }
+
 main .container-cards-restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background: var(--background-light);
   padding: 2rem 2rem 6rem 2rem;
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
   width: 100%;
 }
+
 @media only screen and (min-width: 992px) {
   main .container-cards-restaurants {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
+
 main .container-cards-restaurants h1 {
   font-size: 2.4rem;
 }
+
 @media only screen and (min-width: 992px) {
   main .container-cards-restaurants h1 {
     margin-left: 2rem;
     font-size: 3rem;
-    width: 100%;
+    width: 95%;
     position: relative;
   }
 }
+
 main .container-cards-restaurants i.fa-heart {
   font-size: 3rem;
   margin-right: 1.5rem;
 }
+
 @media only screen and (min-width: 992px) {
   main .container-cards-restaurants i.fa-heart {
     position: absolute;
@@ -220,28 +384,39 @@ main .container-cards-restaurants i.fa-heart {
     right: 4rem;
   }
 }
+
 main .container-cards-restaurants .card {
   width: 100%;
   margin-bottom: 2rem;
 }
+
 @media only screen and (min-width: 992px) {
   main .container-cards-restaurants .card {
     width: 48%;
   }
 }
+
 main .container-cards-restaurants .card h2 {
   text-transform: uppercase;
   font-weight: 400;
   margin: 0.5rem 0;
 }
+
 main .container-cards-restaurants .card hr.solid {
   border-top: 0.5rem solid var(--tertiary);
   width: 6rem;
 }
+
 main .container-cards-restaurants .card article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 0 0 2rem;
   background: var(--background);
   border-radius: 2rem;
@@ -249,13 +424,19 @@ main .container-cards-restaurants .card article {
   width: 100%;
   height: 7rem;
   cursor: pointer;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
+
 main .container-cards-restaurants .card article .description {
-  flex-grow: 1;
-  flex-shrink: 2;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
   min-width: 30%;
 }
+
 main .container-cards-restaurants .card article .description h3 {
   overflow: hidden;
   white-space: nowrap;
@@ -263,48 +444,73 @@ main .container-cards-restaurants .card article .description h3 {
   margin: 0;
   font-size: 1.7rem;
 }
+
 main .container-cards-restaurants .card article .description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
 main .container-cards-restaurants .card article .price {
   width: 25%;
   height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
+
 main .container-cards-restaurants .card article .price p {
   font-size: 1.6rem;
   font-weight: 700;
 }
+
 main .container-cards-restaurants .card article .add {
   display: none;
   width: 25%;
   height: 100%;
 }
+
 main .container-cards-restaurants .card article .add i {
   color: white;
   font-size: 2rem;
   margin-right: 0;
 }
+
 main .container-cards-restaurants .card article:hover .add {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: var(--tertiary);
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
+
 main .container-cards-restaurants .btn-order {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 main .container-cards-restaurants .btn-order .btn {
   padding: 1.5rem 4rem;
 }
-
 /*# sourceMappingURL=restaurants.css.map */

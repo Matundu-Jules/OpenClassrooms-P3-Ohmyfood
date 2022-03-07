@@ -54,6 +54,7 @@ main {
 
     @include desktop {
       justify-content: space-around;
+      align-items: flex-start;
     }
 
     h1 {
@@ -61,7 +62,7 @@ main {
       @include desktop {
         margin-left: 2rem;
         font-size: 3rem;
-        width: 100%;
+        width: 95%;
         position: relative;
       }
     }

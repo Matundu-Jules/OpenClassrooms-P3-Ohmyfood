@@ -37,7 +37,6 @@
     border: 16px solid #fae2f3;
     border-top: 16px solid var(--primary);
   }
-  //
   70% {
     border: 16px solid #e2f8f3;
     border-top: 16px solid var(--primary);
@@ -45,12 +44,14 @@
 
   100% {
     transform: rotate(360deg);
+    display: none;
   }
 }
 
 @keyframes fade-loader {
   0% {
     opacity: 1;
+    visibility: visible;
   }
   50% {
     opacity: 0.5;
@@ -58,5 +59,6 @@
   100% {
     opacity: 0;
     display: none;
+    visibility: hidden;
   }
 }

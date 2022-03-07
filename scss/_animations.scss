@@ -32,3 +32,45 @@
     }
   }
 }
+
+// Animation Page Menu - Apparition Progressive :
+
+@keyframes fade-categories-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-entries {
+  opacity: 0;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation: fade-categories-menu 0.5s * $i forwards ease-in-out;
+    }
+  }
+}
+
+.card-plats {
+  opacity: 0;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation: fade-categories-menu 0.5s * $i forwards 1s ease-in-out;
+    }
+  }
+}
+
+.card-desserts {
+  opacity: 0;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation: fade-categories-menu 0.5s * $i forwards 2s ease-in-out;
+    }
+  }
+}
