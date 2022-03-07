@@ -34,6 +34,11 @@
   border-radius: 3rem;
   color: var(--text-light);
   box-shadow: var(--box-shadow-btn-card);
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 footer {
