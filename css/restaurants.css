@@ -471,18 +471,7 @@ main .container-cards-restaurants .card article .price p {
 }
 
 main .container-cards-restaurants .card article .add {
-  display: none;
-  width: 25%;
-  height: 100%;
-}
-
-main .container-cards-restaurants .card article .add i {
-  color: white;
-  font-size: 2rem;
-  margin-right: 0;
-}
-
-main .container-cards-restaurants .card article:hover .add {
+  width: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,6 +484,30 @@ main .container-cards-restaurants .card article:hover .add {
   background: var(--tertiary);
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  height: 100%;
+  -webkit-transition: width 0.75s ease-in-out;
+  transition: width 0.75s ease-in-out;
+}
+
+main .container-cards-restaurants .card article .add i {
+  color: white;
+  font-size: 2rem;
+  margin-right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
+}
+
+main .container-cards-restaurants .card article:hover .add {
+  width: 25%;
+}
+
+main .container-cards-restaurants .card article:hover i {
+  opacity: 1;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 main .container-cards-restaurants .btn-order {

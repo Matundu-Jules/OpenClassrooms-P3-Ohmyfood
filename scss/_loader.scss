@@ -17,7 +17,7 @@
     border-radius: 50%;
     width: 13rem;
     height: 13rem;
-    animation: spin 2s linear 3;
+    animation: spin 3s linear 3;
     cursor: wait;
   }
 
@@ -26,6 +26,7 @@
     margin-top: 1rem;
     color: var(--primary);
     font-family: var(--font-family-logo-title);
+    animation: loader-color-text 3s linear 3;
   }
 }
 
@@ -33,18 +34,66 @@
   0% {
     transform: rotate(0deg);
   }
-  40% {
-    border: 16px solid #fae2f3;
+  10% {
     border-top: 16px solid var(--primary);
+  }
+  20% {
+    border-top: 16px solid var(--primary);
+  }
+  30% {
+    border-top: 16px solid var(--primary);
+  }
+  40% {
+    border-top: 16px solid var(--secondary);
+  }
+  50% {
+    border-top: 16px solid var(--secondary);
+  }
+  60% {
+    border-top: 16px solid var(--secondary);
   }
   70% {
-    border: 16px solid #e2f8f3;
-    border-top: 16px solid var(--primary);
+    border-top: 16px solid var(--tertiary);
   }
-
+  80% {
+    border-top: 16px solid var(--tertiary);
+  }
+  90% {
+    border-top: 16px solid var(--tertiary);
+  }
   100% {
     transform: rotate(360deg);
     display: none;
+  }
+}
+
+@keyframes loader-color-text {
+  10% {
+    color: var(--primary);
+  }
+  20% {
+    color: var(--primary);
+  }
+  30% {
+    color: var(--primary);
+  }
+  40% {
+    color: var(--secondary);
+  }
+  50% {
+    color: var(--secondary);
+  }
+  60% {
+    color: var(--secondary);
+  }
+  70% {
+    color: var(--tertiary);
+  }
+  80% {
+    color: var(--tertiary);
+  }
+  90% {
+    color: var(--tertiary);
   }
 }
 
@@ -60,5 +109,24 @@
     opacity: 0;
     display: none;
     visibility: hidden;
+  }
+}
+
+// Masquer tout les éléments pdt le loader et les reafficher a la fin de l'animation :
+.header,
+.home,
+.functioning,
+.restaurants,
+footer {
+  opacity: 0;
+  animation: end-loader 1s forwards 5s;
+}
+
+@keyframes end-loader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

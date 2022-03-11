@@ -144,26 +144,34 @@ main {
           }
         }
 
+        // Animation add to cart - Restaurants Pages :
         .add {
-          display: none;
-          width: 25%;
+          width: 0%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: var(--tertiary);
+          border-top-right-radius: 2rem;
+          border-bottom-right-radius: 2rem;
           height: 100%;
+          transition: width 0.75s ease-in-out;
 
           i {
             color: white;
             font-size: 2rem;
             margin-right: 0;
+            opacity: 0;
+            transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
           }
         }
 
         &:hover {
           .add {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: var(--tertiary);
-            border-top-right-radius: 2rem;
-            border-bottom-right-radius: 2rem;
+            width: 25%;
+          }
+          i {
+            opacity: 1;
+            transform: rotate(360deg);
           }
         }
       }
