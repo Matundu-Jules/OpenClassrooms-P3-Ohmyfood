@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  animation: fade-loader 3s 3s linear 1;
+  animation: fade-loader 1s 2s linear 1;
   animation-fill-mode: both;
 
   .circle {
@@ -17,7 +17,7 @@
     border-radius: 50%;
     width: 13rem;
     height: 13rem;
-    animation: spin 3s linear 3;
+    animation: spin 3s linear 2;
     cursor: wait;
   }
 
@@ -26,7 +26,7 @@
     margin-top: 1rem;
     color: var(--primary);
     font-family: var(--font-family-logo-title);
-    animation: loader-color-text 3s linear 3;
+    animation: loader-color-text 3s linear 2;
   }
 }
 
@@ -119,7 +119,7 @@
 .restaurants,
 footer {
   opacity: 0;
-  animation: end-loader 1s forwards 5s;
+  animation: end-loader 1s forwards 3s;
 }
 
 @keyframes end-loader {

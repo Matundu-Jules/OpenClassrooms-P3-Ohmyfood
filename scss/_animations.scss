@@ -1,4 +1,4 @@
-// Animation des boutons like de la page d'accueil :
+// Animation des boutons like de la page d'accueil et pages de menu :
 .like {
   font-size: 3rem;
 
@@ -7,7 +7,7 @@
   }
   &-fill {
     position: absolute;
-    background: var(--btn-home-gradient);
+    background: var(--btn-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

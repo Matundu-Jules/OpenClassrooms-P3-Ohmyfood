@@ -15,7 +15,7 @@
   --background-dark: #353535;
   --box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15), 0 3px 3px rgba(0, 0, 0, 0.1);
   --box-shadow-btn-card: 0 6px 6px rgba(0, 0, 0, 0.1);
-  --btn-home-gradient: linear-gradient(
+  --btn-gradient: linear-gradient(
     341deg,
     rgba(147, 86, 220, 1) 0%,
     rgba(255, 121, 218, 1) 100%
@@ -31,7 +31,7 @@
 
 .btn {
   padding: 1.5rem 2rem;
-  background: var(--btn-home-gradient);
+  background: var(--btn-gradient);
   border-radius: 3rem;
   color: var(--text-light);
   -webkit-box-shadow: var(--box-shadow-btn-card);
@@ -92,8 +92,8 @@ footer ul li a i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: fade-loader 3s 3s linear 1;
-          animation: fade-loader 3s 3s linear 1;
+  -webkit-animation: fade-loader 1s 2s linear 1;
+          animation: fade-loader 1s 2s linear 1;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -104,8 +104,8 @@ footer ul li a i {
   border-radius: 50%;
   width: 13rem;
   height: 13rem;
-  -webkit-animation: spin 3s linear 3;
-          animation: spin 3s linear 3;
+  -webkit-animation: spin 3s linear 2;
+          animation: spin 3s linear 2;
   cursor: wait;
 }
 
@@ -114,8 +114,8 @@ footer ul li a i {
   margin-top: 1rem;
   color: var(--primary);
   font-family: var(--font-family-logo-title);
-  -webkit-animation: loader-color-text 3s linear 3;
-          animation: loader-color-text 3s linear 3;
+  -webkit-animation: loader-color-text 3s linear 2;
+          animation: loader-color-text 3s linear 2;
 }
 
 @-webkit-keyframes spin {
@@ -292,8 +292,8 @@ footer ul li a i {
 .restaurants,
 footer {
   opacity: 0;
-  -webkit-animation: end-loader 1s forwards 5s;
-          animation: end-loader 1s forwards 5s;
+  -webkit-animation: end-loader 1s forwards 3s;
+          animation: end-loader 1s forwards 3s;
 }
 
 @-webkit-keyframes end-loader {
@@ -324,7 +324,7 @@ footer {
 
 .like-fill {
   position: absolute;
-  background: var(--btn-home-gradient);
+  background: var(--btn-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -825,6 +825,7 @@ p {
 
 .restaurants .card .card-description .card-title h3 {
   margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
 }
 
 .restaurants .card .card-description .card-title p {
